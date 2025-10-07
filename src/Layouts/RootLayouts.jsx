@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import { Outlet } from 'react-router';
 import Footer from '../Components/Footer/Footer';
+import Banner from '../Components/Banner/Banner';
 
 const RootLayouts = () => {
     return (
@@ -9,6 +10,7 @@ const RootLayouts = () => {
             <Navbar></Navbar>
             <div className='flex-1'>
                 <Outlet></Outlet>
+                <Banner></Banner>
             </div>
             <Footer></Footer>
         </div>

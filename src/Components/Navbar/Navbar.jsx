@@ -20,19 +20,19 @@ const Navbar = () => {
 
                         </ul>
                     </div>
-                    <img className='w-[40px] h-[40px]' src={logoImg} alt="" />
-                    <Link to="/" className="btn btn-ghost text-xl font-bold">App Galaxy</Link>
+                    <img className='hidden md:block w-[40px] h-[40px]' src={logoImg} alt="" />
+                    <Link to="/" className=" text-xl font-bold">App Galaxy</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="flex gap-4 menu menu-horizontal px-1 font-semibold">
+                    <ul className="flex gap-5 menu menu-horizontal px-1 font-semibold">
                         <NavLink to="/">Home</NavLink>
                         <NavLink to="/apps">Apps</NavLink>
-                        <NavLink>Installation</NavLink>
+                        <NavLink to="/install">Installation</NavLink>
 
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to="https://github.com/limon310/app-galaxy" target='_blank' className="btn bg-gradient-to-l from-[#9f62f2] to-[#632ee3]"><img className='w-[20px] h-[20px] rounded-full border-1 border-white' src={githubLogo} alt="" /> Contribute</Link>
+                    <Link to="https://github.com/limon310/app-galaxy" target='_blank' className="btn bg-gradient-to-l from-[#9f62f2] to-[#632ee3] text-white"><img className='w-[20px] h-[20px] rounded-full border-1 border-white' src={githubLogo} alt="" /> Contribute</Link>
                 </div>
             </div>
         </div>
