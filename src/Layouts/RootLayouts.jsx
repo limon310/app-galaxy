@@ -10,7 +10,6 @@ const RootLayouts = () => {
             <Navbar></Navbar>
             <div className='flex-1'>
                 <Outlet></Outlet>
-                <Banner></Banner>
             </div>
             <Footer></Footer>
         </div>

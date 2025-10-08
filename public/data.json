@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://ibb.co.com/8LsCZYhh",
+    "title": "SkyStream TV",
+    "companyName": "BlueOrbit Studios",
+    "id": 1,
+    "description": "SkyStream TV is your ultimate entertainment hub that brings together movies, series, and live shows in one smooth interface. Enjoy ultra-fast streaming, offline downloads, and smart AI recommendations that adapt to your viewing habits.",
+    "size": 45,
+    "reviews": 12500,
+    "ratingAvg": 4.3,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2300 },
+      { "name": "4 star", "count": 5600 },
+      { "name": "5 star", "count": 5400 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app2.png",
+    "title": "FitZone Pro",
+    "companyName": "ActiveBody Tech",
+    "id": 2,
+    "description": "FitZone Pro helps you stay fit with personalized training plans, calorie tracking, and real-time performance analysis. Its intelligent workout assistant keeps you motivated and ensures you hit your fitness targets efficiently.",
+    "size": 72,
+    "reviews": 9800,
+    "ratingAvg": 4.6,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3800 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app3.png",
+    "title": "NoteEase",
+    "companyName": "SoftVision Labs",
+    "id": 3,
+    "description": "NoteEase lets you jot down ideas, record voice notes, and manage to-do lists with ease. Its auto-sync and powerful search features make it a must-have productivity companion for students and professionals alike.",
+    "size": 30,
+    "reviews": 6400,
+    "ratingAvg": 4.5,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2700 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app4.png",
+    "title": "GameVault",
+    "companyName": "NextPlay Studios",
+    "id": 4,
+    "description": "GameVault lets gamers explore, download, and manage mobile games effortlessly. With curated lists, daily updates, and reviews, you can discover hidden gems and stay ahead in the gaming world.",
+    "size": 90,
+    "reviews": 22400,
+    "ratingAvg": 4.2,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 1800 },
+      { "name": "2 star", "count": 2200 },
+      { "name": "3 star", "count": 3600 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 7800 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app5.png",
+    "title": "PhotoCraft Studio",
+    "companyName": "PixelEdge Creative",
+    "id": 5,
+    "description": "PhotoCraft Studio transforms your photos into professional-grade art. Use advanced AI filters, retouch tools, and creative overlays to design visually stunning content for social media or personal use.",
+    "size": 110,
+    "reviews": 32100,
+    "ratingAvg": 4.7,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 7500 },
+      { "name": "5 star", "count": 19200 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app6.png",
+    "title": "SoundWave Music",
+    "companyName": "EchoTune Media",
+    "id": 6,
+    "description": "SoundWave Music gives you access to high-quality tracks, curated playlists, and AI mood-based recommendations. Whether you’re working, studying, or relaxing, SoundWave sets the perfect soundtrack for your life.",
+    "size": 65,
+    "reviews": 19800,
+    "ratingAvg": 4.4,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2300 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 9600 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app7.png",
+    "title": "TravelTrek",
+    "companyName": "WanderWorld Inc",
+    "id": 7,
+    "description": "TravelTrek is your personal travel companion with smart trip planning, live map tracking, and exclusive local guide recommendations. Perfect for solo travelers and adventure seekers.",
+    "size": 89,
+    "reviews": 5600,
+    "ratingAvg": 4.3,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 2600 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app8.png",
+    "title": "MindEase Meditation",
+    "companyName": "CalmNest Wellness",
+    "id": 8,
+    "description": "MindEase Meditation guides you through mindful practices, breathing exercises, and sleep sounds. Build a daily habit that enhances focus, reduces anxiety, and improves overall well-being.",
+    "size": 54,
+    "reviews": 7800,
+    "ratingAvg": 4.8,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 4700 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app9.png",
+    "title": "TaskFlow Manager",
+    "companyName": "Organix Tools",
+    "id": 9,
+    "description": "TaskFlow Manager makes task management simple with intelligent tracking, real-time syncing, and progress analytics. Collaborate with your team and keep every project on schedule.",
+    "size": 43,
+    "reviews": 15400,
+    "ratingAvg": 4.1,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 5200 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app10.png",
+    "title": "EduSpark Learn",
+    "companyName": "BrightFuture Academy",
+    "id": 10,
+    "description": "EduSpark Learn offers a huge library of professional courses, live tests, and certification programs. Learn anytime, anywhere, from industry experts with engaging lessons and real-world projects.",
+    "size": 118,
+    "reviews": 6700,
+    "ratingAvg": 4.6,
+    "downloads": 2400000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2600 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app11.png",
+    "title": "RecipeHub",
+    "companyName": "TastyVerse Co.",
+    "id": 11,
+    "description": "RecipeHub brings thousands of delicious recipes from around the world. Whether you're cooking for one or hosting a party, find step-by-step guides with nutrition info and video instructions.",
+    "size": 70,
+    "reviews": 8700,
+    "ratingAvg": 4.5,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 3500 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app12.png",
+    "title": "NewsOrbit",
+    "companyName": "MediaLoop Network",
+    "id": 12,
+    "description": "NewsOrbit delivers global news instantly with AI-curated stories based on your interests. Stay informed with breaking headlines, finance updates, and live notifications around the clock.",
+    "size": 64,
+    "reviews": 15200,
+    "ratingAvg": 4.2,
+    "downloads": 4800000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 4300 },
+      { "name": "5 star", "count": 4600 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app13.png",
+    "title": "HealthMate Tracker",
+    "companyName": "LifeSync Solutions",
+    "id": 13,
+    "description": "HealthMate Tracker monitors your heart rate, steps, and sleep cycle in real-time. Set health goals, track diet plans, and receive expert advice to maintain a balanced lifestyle.",
+    "size": 55,
+    "reviews": 13900,
+    "ratingAvg": 4.4,
+    "downloads": 4200000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1900 },
+      { "name": "4 star", "count": 4600 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app14.png",
+    "title": "ShopGo Online",
+    "companyName": "MegaMart Digital",
+    "id": 14,
+    "description": "ShopGo Online lets you explore millions of products with exclusive discounts and fast delivery. From electronics to fashion, everything you need is now just a tap away.",
+    "size": 98,
+    "reviews": 21000,
+    "ratingAvg": 4.3,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1600 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 7100 },
+      { "name": "5 star", "count": 8000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app15.png",
+    "title": "CryptoVault",
+    "companyName": "BlockWave Finance",
+    "id": 15,
+    "description": "CryptoVault keeps your digital assets safe with top-tier encryption. Track real-time crypto prices, manage wallets, and trade securely on the go with instant portfolio updates.",
+    "size": 62,
+    "reviews": 9900,
+    "ratingAvg": 4.5,
+    "downloads": 2600000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 4200 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app16.png",
+    "title": "LangPro Learn",
+    "companyName": "LinguaEdge",
+    "id": 16,
+    "description": "LangPro Learn helps you master new languages through real-world conversations, grammar games, and speech recognition. Learn fast, have fun, and speak confidently in no time.",
+    "size": 120,
+    "reviews": 8700,
+    "ratingAvg": 4.7,
+    "downloads": 3400000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4600 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app17.png",
+    "title": "DocuBox Cloud",
+    "companyName": "SecureSync Technologies",
+    "id": 17,
+    "description": "DocuBox Cloud lets you store, share, and access files safely from anywhere. With version control, encryption, and auto-backup, your data remains protected and easy to manage.",
+    "size": 80,
+    "reviews": 11200,
+    "ratingAvg": 4.4,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 4800 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app18.png",
+    "title": "WeatherPro 360",
+    "companyName": "StormEdge Analytics",
+    "id": 18,
+    "description": "WeatherPro 360 gives you real-time forecasts, storm alerts, and live radar maps. Whether you're planning a trip or monitoring local conditions, stay one step ahead of the weather.",
+    "size": 52,
+    "reviews": 17300,
+    "ratingAvg": 4.3,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2300 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 7900 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app19.png",
+    "title": "MovieHive",
+    "companyName": "CineVerse Media",
+    "id": 19,
+    "description": "MovieHive lets you stream, review, and rate thousands of movies and web series. With daily updates and personalized watchlists, it’s your all-in-one movie experience.",
+    "size": 135,
+    "reviews": 21500,
+    "ratingAvg": 4.6,
+    "downloads": 8500000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 6700 },
+      { "name": "5 star", "count": 10700 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app20.png",
+    "title": "Artify Design",
+    "companyName": "DreamPixel Studios",
+    "id": 20,
+    "description": "Artify Design is a digital art platform for creators, offering thousands of brushes, layers, and AI-powered sketch tools. Whether you’re a beginner or a pro, unleash your creativity and design like never before.",
+    "size": 150,
+    "reviews": 19800,
+    "ratingAvg": 4.8,
+    "downloads": 7600000,
+    "ratings":  [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 6700 },
+      { "name": "5 star", "count": 10700 }
+    ]
+  }
+]
