@@ -1,11 +1,16 @@
 import { Download, Star } from 'lucide-react';
 import React from 'react';
+import { NavLink } from 'react-router';
 
 const AppsCard = ({ app }) => {
-    console.log(app)
-    const {title, image, companyName , downloads, ratingAvg} = app
+    // console.log(app)
+    const {title, companyName , downloads, ratingAvg, id} = app
+    // const handleDetails = () =>{
+    //     console.log("clicked")
+    // }
     return (
-        <div className='flex flex-col justify-center items-center'>
+          <NavLink to={`/details/${id}`}>
+              <div className='flex flex-col justify-center items-center h-full'>
             <div className="card bg-white w-75 h-full shadow-sm">
                 <figure>
                     <img
@@ -21,6 +26,7 @@ const AppsCard = ({ app }) => {
                 </div>
             </div>
         </div>
+          </NavLink>
     );
 };
 
