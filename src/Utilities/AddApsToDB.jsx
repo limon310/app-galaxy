@@ -20,17 +20,5 @@ const addStoredApp = (id)=>{
         localStorage.setItem("app", appData)
     }
 }
-// const addStoredApp = (id) =>{
-//     const addStoredAppData = getStoredApp();
-//     if(addStoredAppData.includes(id)){
-//         return alert("app already added");
-//     }
-  
-//     else{
-//         addStoredAppData.push(id);
-//         const appData = JSON.stringify(addStoredAppData);
-//         localStorage.setItem("app", appData)
-//     }
-// }
 
 export {getStoredApp, addStoredApp};

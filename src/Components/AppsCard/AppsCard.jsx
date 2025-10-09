@@ -8,7 +8,7 @@ const AppsCard = ({ app }) => {
     // const handleDetails = () =>{
     //     console.log("clicked")
     // }
-    console.log(image)
+    // console.log(image)
     return (
           <NavLink to={`/details/${id}`}>
               <div className='flex flex-col justify-center items-center h-full'>

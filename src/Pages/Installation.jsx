@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react';
 import InstallAppsCard from '../Components/InstallAppsCard';
 import { Download, Star } from 'lucide-react';
 import { toast } from 'react-toastify';
+import useApps from '../Hook/useApp';
+import Spinner from '../Components/Spinner';
 
 const Installation = () => {
     const [installed, setInstalled] = useState([]);
     const [sort, setSort] = useState("none")
+    const {loadingSpinner} = useApps();
     useEffect(() => {
         const savedData = JSON.parse(localStorage.getItem("app"))
         if (savedData) {
@@ -35,7 +38,10 @@ const Installation = () => {
         localStorage.setItem("app", JSON.stringify(updateData))
     }
     return (
-        <div className='w-11/12 mx-auto'>
+        <>
+        {
+            loadingSpinner?<Spinner></Spinner>
+            :<div className='w-11/12 mx-auto'>
             <div className='text-center py-10 md:py-20'>
                 <h1 className='text-5xl font-semibold'>Your Installed Apps</h1>
                 <p className='text-lg text-gray-400 mt-4'>Explore All Trending Apps on the Market developed by us</p>
@@ -100,6 +106,8 @@ const Installation = () => {
                 }
             </div>
         </div>
+        }
+        </>
     );
 };
 

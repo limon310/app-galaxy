@@ -10,10 +10,13 @@ const Apps = () => {
     const term = search.trim().toLowerCase();
     const searchApps = term?apps.filter(app => app.title.toLowerCase().includes(term))
     :apps
-    console.log(searchApps)
+    // console.log(searchApps)
     // const {title, companyName, downloads, ratingAvg, image} = apps;
     return (
-        <div className='mt-20 w-11/12 mx-auto'>
+        <>
+         {
+            loadingSpinner?<Spinner></Spinner>
+            :   <div className='mt-20 w-11/12 mx-auto'>
             <div className='text-center'>
                 <h1 className='text-5xl font-bold mb-4'>Our All Applications</h1>
                 <p className='text-lg text-gray-400 mb-10'>Explore All Apps on the Market developed by us. We code for Millions</p>
@@ -27,7 +30,7 @@ const Apps = () => {
             </div>
             <div>
                 {
-                    searchApps.length ===0?<h2 className='text-center text-5xl font-bold py-8'>No data found</h2>:""
+                    searchApps.length ===0?<h2 className='text-center text-5xl font-bold py-10 mb-10'>No App Found</h2>:""
                 }
                 {
                 loadingSpinner?<Spinner></Spinner>
@@ -39,6 +42,10 @@ const Apps = () => {
             }
             </div>
         </div>
+         }
+        </>
+        
+   
     );
 };
 

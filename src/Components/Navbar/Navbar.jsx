@@ -16,7 +16,7 @@ const Navbar = () => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <NavLink to="/">Home</NavLink>
                             <NavLink to="/apps">Apps</NavLink>
-                            <NavLink>Installation</NavLink>
+                            <NavLink to="/install">Installation</NavLink>
 
                         </ul>
                     </div>
@@ -24,7 +24,7 @@ const Navbar = () => {
                     <Link to="/" className=" text-xl font-bold">App Galaxy</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="flex gap-5 menu menu-horizontal px-1 font-semibold">
+                    <ul className="flex gap-5 menu menu-horizontal px-1 font-semibold text-xl ">
                         <NavLink to="/">Home</NavLink>
                         <NavLink to="/apps">Apps</NavLink>
                         <NavLink to="/install">Installation</NavLink>

@@ -5,6 +5,10 @@
 *{
   font-family: "Inter";
 }
-body{
+/* body{
   background-color: #edecec;
+} */
+div a.active {
+    text-decoration: underline;
+    color: orange;
 }
