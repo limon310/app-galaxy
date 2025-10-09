@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Link, useParams } from 'react-router';
 import useApps from '../Hook/useApp';
 import { Download, Star, ThumbsUp,  } from 'lucide-react';
-import { Bar, BarChart, ComposedChart, Legend, Tooltip, XAxis, YAxis } from 'recharts';
+
 import { toast } from 'react-toastify';
 
 const AppsDetails = () => {
-    const [desable, setDesable] = useState(false)
-    console.log(desable)
+    const [isInstall, setIsInstall] = useState(false)
+    console.log(isInstall)
     const { id } = useParams();
     // console.log(id)
     const { apps, loadingSpinner } = useApps();
@@ -64,19 +64,18 @@ const AppsDetails = () => {
                     </div>
                     </div>
                     <div className='mb-10 mt-7 '>
-                        <Link onClick={handleInstalled} className='bg-[#00d390] py-3 px-6 rounded-md text-white'>Install Now ({size} MB)</Link>
+                        <button  onClick={() =>{
+                            if(!isInstall){
+                                handleInstalled()
+                                setIsInstall(true)
+                            }
+                        }} className={`bg-[#00d390] py-3 px-6 rounded-md cursor-pointer text-white ${isInstall?"bg-gray-400":""}`}>{isInstall?<span>Installed</span>:<span>Install Now ({size}) MB</span>}</button>
                     </div>
                 </div>
             </div>
 
             {/* barchart */}
-            {/* <BarChart width={800} height={300} data={app}>
-                    <XAxis dataKey="ratingAvg"></XAxis>
-                    <YAxis></YAxis>
-                    <Tooltip></Tooltip>
-                    <Legend></Legend>
-                    <Bar dataKey="reviews" fill='green'></Bar>
-                </BarChart> */}
+            
             <div className='py-15'>
                 <h3 className='text-2xl font-semibold mb-4'>Description</h3>
                 <p className='text-lg text-gray-400'>{description}</p>
@@ -84,5 +83,5 @@ const AppsDetails = () => {
         </div>
     );
 };
-
+// {Install Now ({size} MB)}
 export default AppsDetails;

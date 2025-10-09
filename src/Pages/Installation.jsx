@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 
 const Installation = () => {
     const [installed, setInstalled] = useState([]);
+    const [sort, setSort] = useState("none")
     useEffect(() => {
         const savedData = JSON.parse(localStorage.getItem("app"))
         if (savedData) {
@@ -13,6 +14,19 @@ const Installation = () => {
     }, [])
     // console.log(installed)
     if (installed.length === 0) return <p className='text-center py-5 text-3xl font-bold'>No data available</p>
+    // handle sorted
+    const handleSorted = () => {
+        if (sort === "size-ascen") {
+            return [...installed].sort((a, b) => a.downloads - b.downloads)
+        }
+        if(sort === "size-descen"){
+            return [...installed].sort((a,b) => b.downloads-a.downloads)
+        }
+        else{
+            return installed;
+        }
+    }
+    // handle remove
     const handleRemove = (id) => {
         const existingData = JSON.parse(localStorage.getItem("app"));
         const updateData = existingData.filter(d => d.id !== id)
@@ -28,16 +42,18 @@ const Installation = () => {
             </div>
             <div className='flex justify-between'>
                 <h3 className='text-2xl font-semibold'>({installed.length}) app found</h3>
-                <select value="" className='border-2 border-gray-500 py-3 px-5 rounded-md text-lg text-gray-500'>
-                    <option value="none">Sort By Size</option>
-                    <option value="assen">long to high</option>
-                    <option value="disen">high to lo</option>
-                </select>
+                <label className=' py-2 px-6 '>
+                    <select onChange={(e) => setSort(e.target.value)} defaultValue={sort} name="" id="" className='py-3 px-6 border-2 border-gray-400 rounded-md'>
+                        <option value="none">Sort by Size</option>
+                        <option value="size-ascen">Lo-&gt; High</option>
+                        <option value="size-descen">High-&gt; Low</option>
+                    </select>
+                </label>
             </div>
             {/* installed app history */}
             <div className='space-y-4 py-5 mb-10'>
                 {
-                    installed.map(app => <div key={app.id} app={app}>
+                    handleSorted().map(app => <div key={app.id} app={app}>
 
                         <div class="p-4 bg-white shadow-md rounded-lg">
                             <div class="flex items-center justify-between">

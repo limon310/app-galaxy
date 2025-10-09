@@ -25,7 +25,11 @@ const Apps = () => {
                     <input onChange={(e) => setSearch(e.target.value)} defaultValue={search} type="search" placeholder="Search Apps" />
                 </label>
             </div>
-            {
+            <div>
+                {
+                    searchApps.length ===0?<h2 className='text-center text-5xl font-bold py-8'>No data found</h2>:""
+                }
+                {
                 loadingSpinner?<Spinner></Spinner>
                 :<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>
                 {
@@ -33,6 +37,7 @@ const Apps = () => {
                 }
             </div>
             }
+            </div>
         </div>
     );
 };
