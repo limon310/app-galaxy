@@ -2,6 +2,7 @@ import React from 'react';
 import heroPng from '../../assets/hero.png'
 import googlePlayLogo from '../../assets/google.png'
 import appStorepng from '../../assets/appstore.jfif'
+import { Link } from 'react-router';
 const Banner = () => {
     return (
         <>
@@ -9,8 +10,12 @@ const Banner = () => {
                 <h1 className='text-3xl md:text-7xl font-bold mb-4'>We Build <span className='text-[#632ee3]'>Productive</span> Apps</h1>
                 <p className='text-gray-400'>At App Galaxy, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.<br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                 <div className='flex gap-5 mt-10 mb-10'>
+                    <Link to="https://play.google.com/store/apps?hl=en" target="_blank">
                     <h3 className='flex gap-2 items-center text-xl font-semibold'><img className='w-8 h-8' src={googlePlayLogo} alt="" /> Google Play</h3>
+                    </Link>
+                    <Link to="https://www.apple.com/app-store/" target="_blank">
                     <h3 className='flex gap-2 items-center text-xl font-semibold'><img className='w-10 h-8' src={appStorepng} alt="" /> App Store</h3>
+                    </Link>
                 </div>
                 <img className='w-[250px] md:w-[412px]' src={heroPng} alt="" />
             </div>

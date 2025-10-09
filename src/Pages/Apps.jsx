@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import useApps from '../Hook/useApp';
 import AppsCard from '../Components/AppsCard/AppsCard';
 import { Search } from 'lucide-react';
+import Spinner from '../Components/Spinner';
 
 const Apps = () => {
     const { apps, loadingSpinner } = useApps();
@@ -24,11 +25,14 @@ const Apps = () => {
                     <input onChange={(e) => setSearch(e.target.value)} defaultValue={search} type="search" placeholder="Search Apps" />
                 </label>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>
+            {
+                loadingSpinner?<Spinner></Spinner>
+                :<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>
                 {
                     searchApps.map(app => <AppsCard key={app.id} app={app}></AppsCard>)
                 }
             </div>
+            }
         </div>
     );
 };

@@ -4,18 +4,20 @@ import { NavLink } from 'react-router';
 
 const AppsCard = ({ app }) => {
     // console.log(app)
-    const {title, companyName , downloads, ratingAvg, id} = app
+    const {title, companyName , downloads, ratingAvg, id, image} = app;
     // const handleDetails = () =>{
     //     console.log("clicked")
     // }
+    console.log(image)
     return (
           <NavLink to={`/details/${id}`}>
               <div className='flex flex-col justify-center items-center h-full'>
             <div className="card bg-white w-75 h-full shadow-sm">
                 <figure>
-                    <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    <img className=''
+                        src={image}
                         alt="Shoes" />
+                        {/* <img src={image} alt="" /> */}
                 </figure>
                 <div className="">
                     <h2 className="text-lg font-medium mt-4">{title}: { companyName}</h2>
