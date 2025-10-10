@@ -19,7 +19,7 @@ const Apps = () => {
         :apps
         setFilteredApps(searchApps)
         setSearchLoading(false)
-        },500)
+        },300)
         return () => clearTimeout (delay)
     },[search, apps]);
     if(loadingSpinner){

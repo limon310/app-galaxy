@@ -50,7 +50,7 @@ const Installation = () => {
                 <h3 className='text-2xl font-semibold'>({installed.length}) app found</h3>
                 <label className=' py-2 px-6 '>
                     <select onChange={(e) => setSort(e.target.value)} defaultValue={sort} name="" id="" className='py-3 px-6 border-2 border-gray-400 rounded-md'>
-                        <option value="none">Sort by Size</option>
+                        <option value="none">Sort by Download</option>
                         <option value="size-ascen">Lo-&gt; High</option>
                         <option value="size-descen">High-&gt; Low</option>
                     </select>
