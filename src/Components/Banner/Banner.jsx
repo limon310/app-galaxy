@@ -23,19 +23,19 @@ const Banner = () => {
                 <h3 className='mb-10 text-3xl md:text-5xl font-bold text-white'>Trusted by Millions, Built for You</h3>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 '>
                     <div className='border-1 rounded-2xl border-gray-200 md:border-none'>
-                        <span className='text-gray-400'>Total Downloads</span>
+                        <span className='text-gray-200'>Total Downloads</span>
                         <h1 className='text-6xl font-extrabold text-white mt-4'>29.6M</h1>
-                        <p className='text-gray-400 mt-4'>21% more than last month</p>
+                        <p className='text-gray-200 mt-4'>21% more than last month</p>
                     </div>
                     <div className='border-1 rounded-2xl border-gray-200 md:border-none'>
-                        <span className='text-gray-400'>Total Downloads</span>
-                        <h1 className='text-6xl font-extrabold text-white mt-4'>29.6M</h1>
-                        <p className='text-gray-400 mt-4'>21% more than last month</p>
+                        <span className='text-gray-200'>Total Reviews</span>
+                        <h1 className='text-6xl font-extrabold text-white mt-4'>906K</h1>
+                        <p className='text-gray-200 mt-4'>46% more than last month</p>
                     </div>
                     <div className='border-1 rounded-2xl border-gray-200 md:border-none'>
-                        <span className='text-gray-400'>Total Downloads</span>
-                        <h1 className='text-6xl font-extrabold text-white mt-4'>29.6M</h1>
-                        <p className='text-gray-400 mt-4'>21% more than last month</p>
+                        <span className='text-gray-200'>Active Apps</span>
+                        <h1 className='text-6xl font-extrabold text-white mt-4'>132+</h1>
+                        <p className='text-gray-200 mt-4'>31 more will Launch</p>
                     </div>
                 </div>
             </div>

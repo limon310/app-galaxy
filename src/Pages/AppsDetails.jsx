@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import useApps from '../Hook/useApp';
 import { Download, Star, ThumbsUp, } from 'lucide-react';
@@ -15,6 +15,13 @@ const AppsDetails = () => {
     // console.log(apps)
     const app = apps.find(singleApp => singleApp.id === Number(id));
     // console.log(app)
+    useEffect(()=>{
+        const installsApps = JSON.parse(localStorage.getItem("app")) || []
+        const alreadyInstallApp = installsApps.some(installsApp=> installsApp.id ===Number(id))
+        if(alreadyInstallApp){
+            setIsInstall(true)
+        }
+    },[id])
     if (loadingSpinner) return <Spinner></Spinner>;
     if (!app) {
         return (
@@ -47,7 +54,7 @@ const AppsDetails = () => {
     return (
         <>
         <div className='w-11/12 mx-auto py-20'>
-            <div className="flex flex-col md:flex-row gap-5 bg-base-100 shadow-sm rounded-md p-5">
+            <div className="flex flex-col md:flex-row gap-8 bg-base-100 shadow-sm rounded-md p-5">
                 <figure>
                     <img className='w-full h-[300px] rounded-md'
                         src={image}

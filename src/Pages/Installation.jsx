@@ -64,7 +64,7 @@ const Installation = () => {
                         <div class="p-4 bg-white shadow-md rounded-lg">
                             <div class="flex items-center justify-between">
 
-                                <div class="flex items-center space-x-4">
+                                <div class="flex flex-col md:flex-row items-center space-x-4">
 
                                     <div class="w-16 h-16 bg-gray-200 rounded-xl flex-shrink-0 ">
                                         <img className='rounded-md' src={app.image} alt="" />

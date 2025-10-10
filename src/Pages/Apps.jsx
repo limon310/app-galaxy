@@ -16,13 +16,13 @@ const Apps = () => {
         <>
          {
             loadingSpinner?<Spinner></Spinner>
-            :   <div className='mt-20 w-11/12 mx-auto'>
+            :   <div className='mt-20 mb-20 w-11/12 mx-auto'>
             <div className='text-center'>
                 <h1 className='text-5xl font-bold mb-4'>Our All Applications</h1>
                 <p className='text-lg text-gray-400 mb-10'>Explore All Apps on the Market developed by us. We code for Millions</p>
             </div>
             <div className='flex justify-between mb-5'>
-                <h3>({searchApps.length}) Apps Found</h3>
+                <h3 className='text-2xl font-semibold'>({searchApps.length}) Apps Found</h3>
                 <label className="input">
                     <Search></Search>
                     <input onChange={(e) => setSearch(e.target.value)} defaultValue={search} type="search" placeholder="Search Apps" />
